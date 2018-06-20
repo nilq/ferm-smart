@@ -1,9 +1,9 @@
 export shine = require "library/shine"
 export state = require "library/state"
+export fluid = require "library/lovefluid"
 
 with love
   .graphics.setDefaultFilter "nearest", "nearest"
-  .graphics.setBackgroundColor 255, 255, 255
 
   .run = ->
     dt = 0

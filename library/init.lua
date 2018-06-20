@@ -1,9 +1,9 @@
 shine = require("library/shine")
 state = require("library/state")
+fluid = require("library/lovefluid")
 do
   local _with_0 = love
   _with_0.graphics.setDefaultFilter("nearest", "nearest")
-  _with_0.graphics.setBackgroundColor(255, 255, 255)
   _with_0.run = function()
     local dt = 0
     local update_time = 0

@@ -26,7 +26,7 @@ make = function(x, y)
     do
       local _with_0 = love.graphics
       self.x = self.x % _with_0.getWidth()
-      self.y = self.y % _with_0.getHeight()
+      self.y = self.y % 550
     end
     return self:chain(dt)
   end
@@ -58,8 +58,8 @@ make = function(x, y)
     for i, thing in ipairs(self.cluster) do
       if thing then
         local a = core.cells[i]
-        x = x + a:cluster_sum().x
-        y = y + a:cluster_sum().y
+        x = x + a.x
+        y = y + a.y
       end
     end
     return {

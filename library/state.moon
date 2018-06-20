@@ -36,13 +36,6 @@ state.update = (dt) =>
 
 state.draw = =>
   @current\draw! if @current.draw
-
-  with love.graphics
-    .setColor 0, 0, 0, 0.4
-    .rectangle "fill", 0, 0, 48, 48
-    .setColor 0, 0, 0
-    .print love.timer.getFPS!, 16, 16
-
   @
 
 state.press = (key, isrepeat) =>

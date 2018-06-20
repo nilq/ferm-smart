@@ -27,7 +27,7 @@ make = (x, y) ->
 
     with love.graphics
       @x %= .getWidth!
-      @y %= .getHeight!
+      @y %= 550
     
     @chain dt
 
@@ -60,9 +60,9 @@ make = (x, y) ->
       if thing
         a = core.cells[i]
 
-        x += a\cluster_sum!.x
-        y += a\cluster_sum!.y
-    
+        x += a.x
+        y += a.y
+
     { x: x / #@cluster, y: y / #@cluster }
 
   methanogen.draw = =>

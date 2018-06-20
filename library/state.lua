@@ -38,13 +38,6 @@ state.draw = function(self)
   if self.current.draw then
     self.current:draw()
   end
-  do
-    local _with_0 = love.graphics
-    _with_0.setColor(0, 0, 0, 0.4)
-    _with_0.rectangle("fill", 0, 0, 48, 48)
-    _with_0.setColor(0, 0, 0)
-    _with_0.print(love.timer.getFPS(), 16, 16)
-  end
   return self
 end
 state.press = function(self, key, isrepeat)
